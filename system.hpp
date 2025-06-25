@@ -10,11 +10,9 @@
 #include <chrono>
 #include <cmath>
 #include <set>
-#include <filesystem>
 
 using namespace std;
 using namespace chrono;
-namespace fs = std::filesystem;
 
 // Estrutura para representar um filme
 struct Movie {
