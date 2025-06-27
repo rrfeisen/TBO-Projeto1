@@ -58,7 +58,8 @@ int main() {
 
                 auto results = system.searchMovies(titleTypes, genres, minDuration, maxDuration, minYear, maxYear);
                 system.displayMovies(results);
-                ::system("pause");
+                cout << "Pressione Enter para continuar...";
+                cin.get();
                 break;
             }
 
@@ -111,19 +112,22 @@ int main() {
                 auto results = system.searchCinemas(titleTypes, genres, minDuration, maxDuration,
                                                   centerX, centerY, maxDistance, maxPrice, minYear, maxYear);
                 system.displayCinemas(results);
-                ::system("pause");
+                cout << "Pressione Enter para continuar...";
+                cin.get();
                 break;
             }
 
             case 3: {
                 system.showTitleTypes();
-                ::system("pause");
+                cout << "Pressione Enter para continuar...";
+                cin.get();       
                 break;
             }
 
             case 4: {
                 system.showGenres();
-                ::system("pause");
+                cout << "Pressione Enter para continuar...";
+                cin.get();
                 break;
             }
 
