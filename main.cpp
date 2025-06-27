@@ -58,8 +58,10 @@ int main() {
 
                 auto results = system.searchMovies(titleTypes, genres, minDuration, maxDuration, minYear, maxYear);
                 system.displayMovies(results);
-                cout << "Pressione Enter para continuar...";
+                cout << "\nPressione Enter para continuar...";
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cin.get();
+
                 break;
             }
 
@@ -112,21 +114,24 @@ int main() {
                 auto results = system.searchCinemas(titleTypes, genres, minDuration, maxDuration,
                                                   centerX, centerY, maxDistance, maxPrice, minYear, maxYear);
                 system.displayCinemas(results);
-                cout << "Pressione Enter para continuar...";
+                cout << "\nPressione Enter para continuar...";
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cin.get();
                 break;
             }
 
             case 3: {
                 system.showTitleTypes();
-                cout << "Pressione Enter para continuar...";
+                cout << "\nPressione Enter para continuar...";
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cin.get();       
                 break;
             }
 
             case 4: {
                 system.showGenres();
-                cout << "Pressione Enter para continuar...";
+                cout << "\nPressione Enter para continuar...";
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cin.get();
                 break;
             }
